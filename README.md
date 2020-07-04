@@ -20,13 +20,13 @@ It keep an local history of the last 10 article annotated so you have them handy
 
 # Where
 
-A public instance run on now.sh 
+A public instance run on [Zeit](https://hypothesis-pwa.vercel.app)
 
 If you want to customize it you can easly host your own with Vercel or Surge
 
 # How
 
-1. Go to xxx.now.sh
+1. Go to [hypothesis-pwa.vercel.app](https://hypothesis-pwa.vercel.app/)
 2. Add to home screen
 3. Open a web page, click share & select "Via Hypothesis"
 
