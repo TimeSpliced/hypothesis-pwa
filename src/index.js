@@ -80,7 +80,7 @@ function App() {
 													 </li>)}
 				</ul>
 			</article>}
-			<footer><span>This app is not affiliated with the official hypothesis service</span> <a href="">Sources & doc</a></footer>
+			<footer><span>This app is not affiliated with the official hypothesis service</span> <a href="https://github.com/TimeSpliced/hypothesis-pwa">Sources & doc</a></footer>
 		</>
 	);
 }
