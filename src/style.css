@@ -1,0 +1,175 @@
+html {
+  line-height: 1.15; /* 1 */
+}
+
+
+/* hard reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+	--border: 1px solid var(--border-co);
+	--border-radius: 5px;
+
+  --bg-co: hsl(120, 0%, 5%);
+  --fg-co: hsl(120, 0%, 90%);
+  --border-co: hsl(120, 0%, 40%);
+  --link-co: #d00032;
+  --navbar-bg-co: hsl(120, 0%, 15%);
+  --navbar-fg-co: var(--fg-co);
+  --box-bg-co:  hsl(120, 0%, 7.5%);
+  --btn-fg-co: var(--fg-co);
+  --btn-bg-co: hsl(120, 0%, 15%);
+  --btn-high-fg-co: var(--bg-co);
+  --btn-high-bg-co: hsl(120, 0%, 70%);
+  --high-bg-co: hsl(120, 0%, 15%);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+    --border: 1px solid var(--border-co);
+  
+    --bg-co: hsl(120, 0%, 95%);
+    --fg-co: hsl(120, 0%, 10%);
+    --border-co: #555;
+    --navbar-bg-co: hsl(120, 0%, 85%);
+    --navbar-fg-co: var(--fg-co);
+    --box-bg-co:  hsl(120, 0%, 92.5%);
+    --btn-fg-co: var(--fg-co);
+    --btn-bg-co: hsl(120, 0%, 85%);
+    --btn-high-fg-co: var(--bg-co);
+    --btn-high-bg-co: hsl(120, 0%, 30%);
+    --high-bg-co: hsl(120, 0%, 85%);
+	}
+}
+
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	background-color: var(--bg-co);
+	color: var(--fg-co);
+}
+
+a {
+  color: var(--link-co);
+}
+
+.logo {
+  background-color: var(--fg-co);
+  color: var(--bg-co);
+  border-radius: 3px;
+  padding: 3px;
+  font-weight: bold;
+}
+
+
+body > header,
+#root > header { 
+  padding: 1rem;
+	background-color: var(--navbar-bg-co);
+	margin: 0 0 1% 0;
+}
+
+body > footer,
+#root > footer { 
+  text-align: center;
+}
+
+
+textarea,
+select,
+input {
+	width: 98%;
+	font-size: 2rem;
+	text-align: center;
+	padding: 0.2em;
+	margin: 0 1% 1% 1%;
+	color: var(--fb-co);
+	background: none;
+	border: var(--border);
+  border-radius: var(--border-radius);
+	box-sizing: border-box;
+}
+
+textarea:focus,
+select:focus,
+input[type]:focus {
+	background-color: var(--high-bg-co);
+
+	/* Reset some browser fancy outlines */
+	outline: 0;
+}
+
+button {
+	width: 98%;
+	font-size: 2rem;
+  font-weight: bolder;
+	padding: 0.2em;
+	margin: 0 1% 1% 1%;
+	background-color: var(--btn-bg-co);
+	color: var(--btn-fg-co);
+	border: none;
+  border-radius: var(--border-radius);
+  transition: ease-in-out 0.4s;
+}
+
+button:hover {
+  /*filter: brightness(120%);*/
+	background-color: var(--btn-high-bg-co);
+  color: var(--btn-high-fg-co);
+}
+
+article {
+	margin: 0 1% 1% 1%;
+  background-color: var(--box-bg-co);
+  margin-bottom: 1rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+article > header {
+  padding: 0.7rem 1rem;
+  font-weight: bolder;
+	border-bottom: var(--border);
+}
+
+/* LIST GROUP */
+ul {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  border: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  border-bottom: var(--border);
+}
+
+ul li:hover {
+	background-color: var(--high-bg-co);
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--fg-co);
+  margin: 0;
+}
+
+.overflow {
+	text-overflow: ellipsis;
+/**
+ * Required properties to achieve text-overflow
+ */
+	white-space: nowrap;
+	overflow: hidden;
+}
